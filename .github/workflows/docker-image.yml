@@ -1,12 +1,12 @@
 name: CI for Spring Boot with Maven and Docker
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      build-arg:
+        description: 'Optional build argument'
+        required: false
+        default: 'default-value'
 
 jobs:
   build:
