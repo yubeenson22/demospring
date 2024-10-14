@@ -9,7 +9,7 @@ on:
         default: 'default-value'
 
 jobs:
-  build:
+  buildCustom:
     runs-on: ubuntu-latest
 
     steps:
